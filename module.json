@@ -1,0 +1,9 @@
+{
+	"name": "mute-darkan",
+	"description": "Controls various dungeon audio in The Veil (Darkan)",
+	"options": {
+		"settingsVersion": 1,
+		"settingsFile": "config.json",
+		"settingsMigrator": "config_generator.js"
+	}
+}
