@@ -3,7 +3,7 @@ module.exports = class mod {
 		mod.loadSettings()
 
 		mod.hook("S_PLAY_EVENT_SOUND", "*", (event) => {
-			if (mod.game.me.zone != 3111) return
+			if (mod.game.me.zone !== 3111) return
 			return mod.settings.allSoundsDisabled || (mod.settings.bgmDisabled && mod.settings.bgmSounds.includes(event.id)) ? false : undefined
 		})
 
